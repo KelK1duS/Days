@@ -1,5 +1,3 @@
-#include "../includes/ft.h"
-
 int	ft_strlen(char *str)
 {
 	unsigned int	i;

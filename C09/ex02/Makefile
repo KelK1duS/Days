@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS= -Wall -Wextra -Werror 
 
-SRCS=
+SRCS= ft_split.c
 OBJ= $(subst .c,.o,$(SRCS))
 
 NAME=exec

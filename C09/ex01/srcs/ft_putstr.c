@@ -1,4 +1,3 @@
-#include "../includes/ft.h"
 #include <unistd.h>
 
 void	ft_putstr(char *str)

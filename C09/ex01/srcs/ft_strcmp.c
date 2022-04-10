@@ -1,5 +1,3 @@
-#include "../includes/ft.h"\
-
 int	ft_strcmp(char *dest, char *src)
 {
 	unsigned int	i;
