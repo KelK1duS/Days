@@ -6,9 +6,11 @@ void	set_point(t_point *point)
 	point->y = 21;
 }
 
+#include <stdio.h>
 int	main(void)
 {
 	t_point	point;
 	set_point(&point);
+	printf("%i %i\n", point.x, point.y);
 	return (0);
 }

@@ -1,15 +1,15 @@
 CC=gcc
 CFLAGS= -Wall -Werror -Wextra
 
-SRCS= ft_show_tab.c ft_strs_to_tab.c
+SRCS= ft_strs_to_tab.c ft_show_tab.c
 OBJ= $(subst .c,.o,$(SRCS))
 
 NAME=exec
 
-$(NAME): all
+all: $(NAME)
 
-all: .c.o
-	$(CC) $(OBJ) -o $(NAME)
+$(NAME): $(OBJ)
+	$(CC) $^ -o $@
 
 .c.o:
 	$(CC) $(SRCS) -c $(CFLAGS)

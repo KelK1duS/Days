@@ -4,12 +4,12 @@ CFLAGS= -Wall -Werror -Wextra
 SRCS= ft_boolean.c
 OBJ= $(subst .c,.o,$(SRCS))
 
-NAME=exec
+NAME= exec
 
-$(NAME): all
+all: $(NAME)
 
-all: .c.o
-	$(CC) $(OBJ) -o $(NAME)
+$(NAME): $(OBJ)
+	$(CC) $^ -o $@
 
 .c.o:
 	$(CC) $(SRCS) -c $(CFLAGS)
